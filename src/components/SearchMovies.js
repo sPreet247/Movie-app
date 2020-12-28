@@ -6,8 +6,8 @@ function SearchMovies(props) {
     <>
       {props.movies.map((movie, index) => (
         <div>
-          <img src={movie.Poster} alt='movie'></img>
-          <div>
+          s<img src={movie.Poster} alt='movie'></img>
+          <div onClick={() => props.handleFavoritesClick(movie)}>
             <FavoriteComponent />
           </div>
         </div>
